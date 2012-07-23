@@ -42,7 +42,7 @@ require('http').createServer(function(req, res) {
         {
             res.writeHead(200, { 'Content-type': 'application/json' });
             res.end(JSON.stringify({
-                location: response.headers['location']
+                location: response.headers.location
             }));
         } else { // Not a redirect
             // Notify via status code

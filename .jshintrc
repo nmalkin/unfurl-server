@@ -1,0 +1,9 @@
+{
+    "node" : true,
+
+    "devel": true,
+    "eqeqeq": true,
+    "latedef": true,
+    "undef": true,
+    "strict": true
+}
