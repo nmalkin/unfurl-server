@@ -1,0 +1,9 @@
+{
+    "name": "unfurl-server",
+    "version": "0.1.0",
+    "author": "Nathan Malkin <nmalkin@mozilla.com>",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {}
+}
