@@ -26,6 +26,15 @@ require('http').createServer(function(req, res) {
 
     target = query.url;
 
+    // Can only deal with HTTP protocol
+    if(! /^http:/.test(target)) {
+        res.writeHead(204, {
+            'Content-type': 'text/plain'
+        });
+        res.end('Only HTTP protocol supported');
+        return;
+    }
+
     // Make a request to the target URL
     http.get(target, function(response) {
         if(isRedirectCode(response.statusCode) &&
